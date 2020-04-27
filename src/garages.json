@@ -1,0 +1,128 @@
+[
+  {
+    "name": "Blackford Street Garage (XF)",
+    "type": "Permit Only",
+    "location": {
+      "lat": 39.774380,
+      "lng": -86.170770
+    },
+    "clearances": "1st Floor – 8’2” Upper levels – 7’0”"
+  },
+  {
+    "name": "Wilson Street Garage (PK)",
+    "type": "Permit and Visitor",
+    "location": {
+      "lat": 39.778580,
+      "lng": -86.178920
+    },
+    "clearances": "7’0”"
+  },
+  {
+    "name": "University Garage (XA)",
+    "type": "Permit and Visitor",
+    "location": {
+      "lat": 39.776790,
+      "lng": -86.175650
+    },
+    "clearances": "6’10”"
+  },
+  {
+    "name": "Vermont Street Garage (XB)",
+    "type": "Permit and Visitor",
+    "location": {
+      "lat": 39.774170,
+      "lng": -86.177170
+    },
+    "clearances": "6’10”"
+  },
+  {
+    "name": "North Street Garage (XC)",
+    "type": "Permit and Visitor",
+    "location": {
+      "lat": 39.775780,
+      "lng": -86.172900
+    },
+    "clearances": "7’0”"
+  },
+  {
+    "name": "Sports Complex Garage (XD)",
+    "type": "Permit and Visitor",
+    "location": {
+      "lat": 39.771660,
+      "lng": -86.174170
+    },
+    "clearances": "7’0”"
+  },
+  {
+    "name": "Riley Outpatient Center Garage (XE)",
+    "type": "Permit and Visitor",
+    "location": {
+      "lat": 39.776800,
+      "lng": -86.180540
+    },
+    "clearances": "1st Floor – 8’2” Upper levels – 7’6”"
+  },
+  {
+    "name": "Barnhill Garage (XH)",
+    "type": "Student Permit Only",
+    "location": {
+      "lat": 39.772700,
+      "lng": -86.178050
+    },
+    "clearances": "1st Floor – 9’2” Upper levels – 7’6”"
+  },
+  {
+    "name": "Campus Housing Deck (XG)",
+    "type": "Campus Housing Permit Only",
+    "location": {
+      "lat": 39.775610,
+      "lng": -86.187010
+    },
+    "clearances": "1st Floor – 7’6” Upper level – 8’2”"
+  },
+  {
+    "name": "Inlow Garage (IH)",
+    "type": "Permit and Visitor",
+    "location": {
+      "lat": 39.772130,
+      "lng": -86.167960
+    },
+    "clearances": "6’10”"
+  },
+  {
+    "name": "Gateway Garage (XL)",
+    "type": "Student Permit and Visitor",
+    "location": {
+      "lat": 39.775330,
+      "lng": -86.169050
+    },
+    "clearances": "1st Floor – 8’6” Upper levels – 7’0”"
+  },
+  {
+    "name": "Riverwalk Garage (XP)",
+    "type": "Permit and Visitor",
+    "location": {
+      "lat": 39.769560,
+      "lng": -86.174980
+    },
+    "clearances": "1st Floor – 8’2” Upper levels – 7’0”"
+  },
+  {
+    "name": "Tower Garage (IP)",
+    "type": "Student and Visitor",
+    "location": {
+      "lat": 39.775830,
+      "lng": -86.174610
+    },
+    "clearances": "6’8”"
+  },
+  {
+    "name": "Lockefield Garage (WX)",
+    "type": "Student and Visitor",
+    "location": {
+      "lat": 39.778440,
+      "lng": -86.175990
+    },
+    "clearances": "6’10”"
+  }
+]
