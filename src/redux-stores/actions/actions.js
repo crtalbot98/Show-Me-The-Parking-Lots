@@ -11,3 +11,12 @@ export const setUserData = (email, name) => {
         email: email
     }
 };
+
+export const setGarage = (lat, lng, zoom) => {
+    return{
+        type: 'SET_GARAGE',
+        lat: lat,
+        lng: lng,
+        zoom: zoom
+    }
+};

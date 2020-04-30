@@ -2,12 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="810fda78-8373-483d-b3a3-3e654bf4110d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/helpers/helper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/garages.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Nav.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/SideBar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/google-maps/GoogleMaps.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/google-maps/Pointer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/google-maps/Recenter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/routes/Routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/routes/Routes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/user/SignIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/user/SignIn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/user/SignUp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/user/SignUp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux-stores/actions/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux-stores/actions/actions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux-stores/reducers/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux-stores/reducers/reducer.js" afterDir="false" />
     </list>
@@ -42,7 +48,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../react-redux-sorting-loading" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../google-maps-in-react" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -51,6 +57,11 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="yarn" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\School Projects\CIT-49900\final-project\src\components\google-maps" />
+    </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
@@ -79,7 +90,8 @@
       <updated>1587860049048</updated>
       <workItem from="1587860050968" duration="3194000" />
       <workItem from="1588002712430" duration="19000" />
-      <workItem from="1588002766709" duration="8844000" />
+      <workItem from="1588002766709" duration="9038000" />
+      <workItem from="1588202269323" duration="10323000" />
     </task>
     <servers />
   </component>
@@ -91,17 +103,17 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="348" y="436" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1588002718288" />
-    <state x="1060" y="455" key="FileChooserDialogImpl" timestamp="1588003697690">
+    <state x="1060" y="455" key="FileChooserDialogImpl" timestamp="1588202352027">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1060" y="455" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1588003697690" />
+    <state x="1060" y="455" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1588202352027" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/routes/Routes.js</url>
-          <line>3</line>
+          <line>2</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

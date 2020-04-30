@@ -19,6 +19,7 @@ function SignIn (){
         Fire.auth().signInWithEmailAndPassword(input.email, input.password).then(() => {
             let user = Fire.auth().currentUser;
 
+
             console.log(user);
         }).catch((err) =>{
             const errCode = err.code;
