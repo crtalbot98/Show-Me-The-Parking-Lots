@@ -2,18 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="810fda78-8373-483d-b3a3-3e654bf4110d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Nav.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/SideBar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/google-maps/GoogleMaps.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/google-maps/Pointer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/google-maps/Recenter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/google-maps/Location.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/home/Home.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/home/SideBar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Nav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/Nav.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SideBar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/google-maps/GoogleMaps.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/google-maps/GoogleMaps.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/google-maps/Recenter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/google-maps/Recenter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/routes/Routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/routes/Routes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/user/SignIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/user/SignIn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/user/SignUp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/user/SignUp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux-stores/actions/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux-stores/actions/actions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux-stores/reducers/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux-stores/reducers/reducer.js" afterDir="false" />
     </list>
@@ -48,7 +53,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../google-maps-in-react" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../google-maps-demo" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -60,6 +65,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\School Projects\CIT-49900\final-project\src\components" />
+      <recent name="C:\School Projects\CIT-49900\final-project\src\home" />
       <recent name="C:\School Projects\CIT-49900\final-project\src\components\google-maps" />
     </key>
   </component>
@@ -91,7 +98,9 @@
       <workItem from="1587860050968" duration="3194000" />
       <workItem from="1588002712430" duration="19000" />
       <workItem from="1588002766709" duration="9038000" />
-      <workItem from="1588202269323" duration="10323000" />
+      <workItem from="1588202269323" duration="10654000" />
+      <workItem from="1588277640316" duration="8438000" />
+      <workItem from="1588295576235" duration="8298000" />
     </task>
     <servers />
   </component>
@@ -103,10 +112,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="348" y="436" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1588002718288" />
-    <state x="1060" y="455" key="FileChooserDialogImpl" timestamp="1588202352027">
+    <state x="1060" y="455" key="FileChooserDialogImpl" timestamp="1588302275953">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1060" y="455" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1588202352027" />
+    <state x="1060" y="455" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1588302275953" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

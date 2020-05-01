@@ -1,19 +1,34 @@
 import React from "react";
 import {
     Switch,
-    Route
+    Route,
+    Redirect
 } from "react-router-dom";
-import Home from "../Home";
-import SignIn from "../user/SignUp";
+import {useSelector} from "react-redux";
+import Home from "../home/Home";
+import SignIn from "../user/SignIn";
 import SignUp from "../user/SignUp";
 
 function Routes () {
 
+    const isUserSignedIn = useSelector(state => state.isSignedIn);
+    const [signInCheck, setSignIn] = React.useState(false);
+
+    React.useEffect(() => {
+        setSignIn(isUserSignedIn);
+    }, [isUserSignedIn]);
+
     return(
         <Switch>
-            <Route exact route={'/'} component={Home}/>
-            <Route route={'/signup'} exact component={SignUp}/>
-            <Route route={'/signin'} exact component={SignIn}/>
+            <Route exact path={'/'}>
+                {signInCheck ? <Home/> : <Redirect to={'/signin'}/>}
+            </Route>
+            <Route path={'/signup'}>
+                {!signInCheck ? <SignUp/> : <Redirect to={'/'}/>}
+            </Route>
+            <Route path={'/signin'}>
+                {!signInCheck ? <SignIn/> : <Redirect to={'/'}/>}
+            </Route>
         </Switch>
     );
 }

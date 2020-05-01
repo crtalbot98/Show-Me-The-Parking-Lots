@@ -1,14 +1,15 @@
 const initState = {
     isSignedIn: false,
     userData:{
-        'email': '',
-        'name': ''
+        email: '',
+        name: ''
     },
     selectedGarage: {
-        lat: '',
-        lng: '',
-        zoom: 14
-    }
+        lat: 39.768996924,
+        lng: -86.17166598,
+        zoom: 15
+    },
+    userLocation: {}
 };
 
 const rootReducer = (state = initState, action) => {
@@ -17,7 +18,7 @@ const rootReducer = (state = initState, action) => {
         case 'SET_USER_LOG_IN':
             return{
                 ...state,
-                isSignedIn: !state.isSignedIn
+                isSignedIn: action.bool
             };
         case 'SET_USER_DATA':
             return{
@@ -35,6 +36,14 @@ const rootReducer = (state = initState, action) => {
                     lng: action.lng,
                     zoom: action.zoom
                 }
+            };
+        case 'SET_USER_LOC':
+            return{
+              ...state,
+              userLocation: {
+                  x: action.x,
+                  y: action.y
+              }
             };
         default:
             return state;

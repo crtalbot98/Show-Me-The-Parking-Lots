@@ -1,6 +1,7 @@
-export const setUserLogIn = () => {
+export const setUserLogIn = (bool) => {
     return{
-        type: 'SET_USER_LOG_IN'
+        type: 'SET_USER_LOG_IN',
+        bool: bool
     }
 };
 
@@ -18,5 +19,13 @@ export const setGarage = (lat, lng, zoom) => {
         lat: lat,
         lng: lng,
         zoom: zoom
+    }
+};
+
+export const setUserLoc = (x, y) => {
+    return{
+        type: 'SET_USER_LOC',
+        x: x,
+        y: y
     }
 };

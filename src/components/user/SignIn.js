@@ -19,8 +19,8 @@ function SignIn (){
         Fire.auth().signInWithEmailAndPassword(input.email, input.password).then(() => {
             let user = Fire.auth().currentUser;
 
+            dispatch(setUserData(user.email, user.displayName));
 
-            console.log(user);
         }).catch((err) =>{
             const errCode = err.code;
             const errMessage = err.message;
@@ -30,10 +30,11 @@ function SignIn (){
     };
 
     return(
-        <div>
+        <div className={'login-cont'}>
+            <h2>Sign in</h2>
             <div>
                 <label htmlFor="email">Email</label>
-                <input type="email" name='email' id={'password'}
+                <input type="email" name='email' id={'email'}
                        onChange={handleInput('email')}
                        value={input.email}/>
             </div>

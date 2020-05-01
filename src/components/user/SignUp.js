@@ -24,8 +24,8 @@ function SignUp (){
             user.updateProfile({
                 displayName: input.name
             }).then(() => {
-                dispatch(setUserLogIn());
-                dispatch(setUserData(input.email, input.name));
+                dispatch(setUserLogIn(true));
+                dispatch(setUserData(user.email, user.displayName));
                 updateInput({
                     email: "",
                     password: "",
@@ -41,16 +41,17 @@ function SignUp (){
     };
 
     return(
-        <div>
+        <div className={'login-cont'}>
+            <h2>Sign up</h2>
             <div>
-                <label htmlFor="name">Email</label>
+                <label htmlFor="name">Name</label>
                 <input type="text" name='name' id={'name'}
                        onChange={handleInput('name')}
                        value={input.name}/>
             </div>
             <div>
                 <label htmlFor="email">Email</label>
-                <input type="email" name='email' id={'password'}
+                <input type="email" name='email' id={'email'}
                        onChange={handleInput('email')}
                        value={input.email}/>
             </div>
@@ -62,7 +63,7 @@ function SignUp (){
             </div>
             <div>
                 <label htmlFor="confirmPass">Password</label>
-                <input type="confirmPass" name='confirmPass' id={'confirmPass'}
+                <input type="password" name='confirmPass' id={'confirmPass'}
                        onChange={handleInput('confirmPass')}
                        value={input.confirmPass}/>
             </div>

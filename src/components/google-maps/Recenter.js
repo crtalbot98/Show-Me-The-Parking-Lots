@@ -8,8 +8,8 @@ function Recenter () {
 
 
     return(
-        <div className={'recenter'} onClick={() => {
-            dispatch(setGarage(39.768996924, -86.17166598, 10))
+        <div className={'recenter border-left iupuiBtn'} onClick={() => {
+            dispatch(setGarage(39.768996924, -86.17166598, 15))
         }}>
             <p>IUPUI</p>
         </div>
