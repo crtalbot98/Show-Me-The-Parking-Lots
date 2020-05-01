@@ -9,7 +9,11 @@ const initState = {
         lng: -86.17166598,
         zoom: 15
     },
-    userLocation: {}
+    userLocation: {},
+    closestGarage: {
+        name: '',
+        miles: null
+    }
 };
 
 const rootReducer = (state = initState, action) => {
@@ -44,6 +48,14 @@ const rootReducer = (state = initState, action) => {
                   x: action.x,
                   y: action.y
               }
+            };
+        case 'SET_CLOSEST_GARAGE':
+            return{
+                ...state,
+                closestGarage: {
+                    name: action.name,
+                    miles: action.miles
+                }
             };
         default:
             return state;

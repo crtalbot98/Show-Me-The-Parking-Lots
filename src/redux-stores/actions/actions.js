@@ -29,3 +29,11 @@ export const setUserLoc = (x, y) => {
         y: y
     }
 };
+
+export const closestGarage = (name, miles) => {
+    return{
+        type: 'SET_CLOSEST_GARAGE',
+        name: name,
+        miles: miles
+    }
+};

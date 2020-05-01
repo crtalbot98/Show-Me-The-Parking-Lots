@@ -3,6 +3,7 @@ import SideBar from "./SideBar";
 import Recenter from "../google-maps/Recenter";
 import GoogleMaps from "../google-maps/GoogleMaps";
 import Location from "../google-maps/Location";
+import ClosestGarage from "../google-maps/ClosestGarage";
 
 function Home () {
 
@@ -11,6 +12,7 @@ function Home () {
             <SideBar/>
             <Recenter/>
             <Location/>
+            <ClosestGarage/>
             <GoogleMaps/>
         </div>
     );

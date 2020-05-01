@@ -2,8 +2,10 @@ import React from "react";
 import GoogleMapReact from 'google-map-react';
 import Garages from '../../garages.json';
 import Pointer from "./Pointer";
+import UserPointer from "./UserPointer";
 import {useSelector, useDispatch} from "react-redux";
-import {setUserLoc} from "../../redux-stores/actions/actions";
+import {setUserLoc, closestGarage} from "../../redux-stores/actions/actions";
+import {latToMiles} from "../helpers/helper";
 
 function GoogleMaps(){
 
@@ -18,11 +20,33 @@ function GoogleMaps(){
         lng: -86.17166598
     });
 
+    const getAllMiles = (userLoc) => {
+        let current = {},
+            closest = {},
+            currentMiles = -1;
+
+        Garages.forEach((gEle) => {
+            const miles = latToMiles(Number(userLoc.x), Number(gEle.location.lat), Number(userLoc.y), Number(gEle.location.lng));
+            if(miles < currentMiles) {
+                closest.name = gEle.name;
+                closest.miles = miles;
+            }
+
+            current = gEle;
+            currentMiles = miles;
+        });
+        console.log(closest);
+        dispatch(closestGarage(closest.name, closest.miles));
+    };
+
     const onChange = ({coords}) => {
+
         setPos({
             x: coords.latitude,
             y: coords.longitude,
         });
+
+        getAllMiles({x: coords.latitude, y: coords.longitude});
 
         dispatch(setUserLoc(coords.latitude, coords.longitude));
     };
@@ -66,6 +90,7 @@ function GoogleMaps(){
                 distanceToMouse = {()=>{}}
             >
                 {pointers}
+                <UserPointer lat={currentPos.x} lng={currentPos.y}/>
             </GoogleMapReact>
         </div>
     );
