@@ -13,7 +13,8 @@ const initState = {
     closestGarage: {
         name: '',
         miles: null
-    }
+    },
+    itAndEt: false
 };
 
 const rootReducer = (state = initState, action) => {
@@ -54,8 +55,15 @@ const rootReducer = (state = initState, action) => {
                 ...state,
                 closestGarage: {
                     name: action.name,
-                    miles: action.miles
+                    miles: action.miles,
+                    type: action.pType,
+                    clearances: action.clearances
                 }
+            };
+        case 'SET_NEAR_IT_ET':
+            return{
+                ...state,
+              itAndEt: !state.itAndEt
             };
         default:
             return state;

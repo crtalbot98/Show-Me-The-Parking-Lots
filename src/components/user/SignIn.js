@@ -2,6 +2,7 @@ import React from "react";
 import Fire from "../firebase/Fire";
 import {setUserData, setUserLogIn} from "../../redux-stores/actions/actions";
 import {useDispatch} from "react-redux";
+import {Link} from "react-router-dom";
 
 function SignIn (){
 
@@ -19,8 +20,8 @@ function SignIn (){
         Fire.auth().signInWithEmailAndPassword(input.email, input.password).then(() => {
             let user = Fire.auth().currentUser;
 
+            dispatch(setUserLogIn(true));
             dispatch(setUserData(user.email, user.displayName));
-
         }).catch((err) =>{
             const errCode = err.code;
             const errMessage = err.message;
@@ -45,6 +46,7 @@ function SignIn (){
                        value={input.password}/>
             </div>
             <button onClick={submitUserData}>Submit</button>
+            <Link to={'/signup'}>Not a user yet?</Link>
         </div>
     );
 }

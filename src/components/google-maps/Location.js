@@ -19,7 +19,9 @@ function Location () {
         <div className={'recenter border-left latAndLng'} onClick={() => {
             dispatch(setGarage(loc.x, loc.y, 18))
         }}>
-            <p>{Number(loc.x).toFixed(3)}&#176;N {Number(loc.y).toFixed(3)}&#176;W</p>
+            <span style={{fontSize: '1.5em', color: '#fff', marginRight: '0.5em'}}>
+                <i className="fas fa-location-arrow"></i>
+            </span>
         </div>
     );
 }

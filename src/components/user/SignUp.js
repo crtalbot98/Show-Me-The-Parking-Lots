@@ -2,6 +2,7 @@ import React from "react";
 import Fire from "../firebase/Fire";
 import {useDispatch} from "react-redux";
 import {setUserLogIn, setUserData} from '../../redux-stores/actions/actions';
+import {Link} from "react-router-dom";
 
 function SignUp (){
 
@@ -68,6 +69,7 @@ function SignUp (){
                        value={input.confirmPass}/>
             </div>
             <button onClick={submitUserData}>Submit</button>
+            <Link to={'/signin'}>Already a user?</Link>
         </div>
     );
 }

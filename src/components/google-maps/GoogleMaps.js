@@ -11,9 +11,11 @@ function GoogleMaps(){
 
     const mapsKey = 'AIzaSyB3CvKgpfY4aSTMvI5B7-EhxUqe7hF0uuk';
     const dispatch = useDispatch();
+    const [garageList, SetGarageList] = React.useState(Garages);
     const [currentPos, setPos] = React.useState({});
     const [error, setError] = React.useState(null);
     const currentGarage = useSelector(state => state.selectedGarage);
+    const nearITandET = useSelector(state => state.itAndEt);
     const [zoom, updateZoom] = React.useState(15);
     const [center, updateCenter] = React.useState({
         lat: 39.768996924,
@@ -25,18 +27,20 @@ function GoogleMaps(){
             closest = {},
             currentMiles = -1;
 
-        Garages.forEach((gEle) => {
+        garageList.forEach((gEle) => {
             const miles = latToMiles(Number(userLoc.x), Number(gEle.location.lat), Number(userLoc.y), Number(gEle.location.lng));
             if(miles < currentMiles) {
                 closest.name = gEle.name;
                 closest.miles = miles;
+                closest.clearances = gEle.clearances;
+                closest.type = gEle.type;
             }
 
             current = gEle;
             currentMiles = miles;
         });
-        console.log(closest);
-        dispatch(closestGarage(closest.name, closest.miles));
+
+        dispatch(closestGarage(closest));
     };
 
     const onChange = ({coords}) => {
@@ -55,7 +59,7 @@ function GoogleMaps(){
         setError(error.message);
     };
 
-    let pointers = Garages.map((ele, key) =>
+    let pointers = garageList.map((ele, key) =>
         <Pointer key={key} lat={ele.location.lat} lng={ele.location.lng}/>
     );
 
@@ -68,6 +72,20 @@ function GoogleMaps(){
         })
 
     }, [currentGarage]);
+
+    React.useEffect(() => {
+        if(nearITandET){
+            const newGarList = Garages.filter((ele) => {
+                if(ele.name === 'Gateway Garage (XL)' || ele.name === 'Blackford Street Garage (XF)' || ele.name === 'North Street Garage (XC)'){
+                    return true;
+                }
+            });
+            SetGarageList(newGarList);
+        }
+        else{
+            SetGarageList(Garages);
+        }
+    }, [nearITandET]);
 
     React.useEffect(() => {
         const geo = navigator.geolocation;

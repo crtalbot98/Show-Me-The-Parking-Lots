@@ -30,10 +30,18 @@ export const setUserLoc = (x, y) => {
     }
 };
 
-export const closestGarage = (name, miles) => {
+export const closestGarage = (closest) => {
     return{
         type: 'SET_CLOSEST_GARAGE',
-        name: name,
-        miles: miles
+        name: closest.name,
+        miles: closest.miles,
+        pType: closest.type,
+        clearances: closest.clearances
+    }
+};
+
+export const setITAndET = () => {
+    return{
+        type: 'SET_NEAR_IT_ET'
     }
 };

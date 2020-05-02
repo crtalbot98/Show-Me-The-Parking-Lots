@@ -24,7 +24,9 @@ function SideBar () {
           <div className={!clickStatus ? 'menu border-right' : 'menu transform-menu circle'} onClick={() => {
               setStatus(!clickStatus);
           }}>
-              <p>{!clickStatus ? 'Open' : 'Close'}</p>
+              {!clickStatus ?
+                  <span style={{fontSize: '2em', color: '#fff'}}><i className="fas fa-angle-right"></i></span> :
+                  <span style={{fontSize: '2em', color: '#fff'}}><i className="fas fa-angle-left"></i></span>}
           </div>
           <ul className={clickStatus ? 'open' : 'closed'}>
               {IUPUIGarages}

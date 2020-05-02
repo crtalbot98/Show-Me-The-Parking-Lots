@@ -9,9 +9,8 @@ function Nav () {
     const dispatch = useDispatch();
     const isUserSignedIn = useSelector(state => state.isSignedIn);
     const [userSignedIn, setSignedIn] = React.useState(false);
+    const [open, setStatus] = React.useState(false);
     const user = useSelector(state => state.userData);
-
-    console.log(user);
 
     const signOut = () => {
         Fire.auth().signOut().then(() => {
@@ -26,8 +25,20 @@ function Nav () {
     }, [isUserSignedIn, user]);
 
     return(
-      <nav className={'border-left'}>
-        {userSignedIn ? <div><p>{user.name}</p> <p onClick={signOut}>Sign out</p></div> : <div><Link to={"/signin"}>Sign In</Link> <Link to={"/signup"}>Sign Up</Link></div>}
+      <nav className={!open ? 'border-left' : 'border-left slide-open'} onClick={() => {setStatus(!open)}}>
+          {!open ?
+              <div>
+                  <span style={{fontSize: '2em', color: '#fff'}}><i className="fas fa-user"></i></span>
+              </div>:
+              <div>
+              <span style={{fontSize: '2em', color: '#fff', marginRight: '0.5em'}}><i className="fas fa-angle-right"></i></span>
+              {
+                  userSignedIn ?
+                  <div><p>{user.name}</p> <p onClick={signOut}>Sign out</p></div> :
+                  <div><Link to={"/signin"}>Sign In</Link> <Link to={"/signup"}>Sign Up</Link></div>
+              }
+              </div>
+          }
       </nav>
     );
 }

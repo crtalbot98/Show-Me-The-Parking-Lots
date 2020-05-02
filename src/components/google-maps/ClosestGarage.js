@@ -17,7 +17,7 @@ function ClosestGarage () {
     }, [closestG]);
 
     return(
-        <div className={'recenter border-left closestG'}>
+        <div className={'recenter border-right closestG'}>
             <p>Closest garage is {closest.name} at {Number(closest.miles).toFixed(2)} mile(s)</p>
         </div>
     )
