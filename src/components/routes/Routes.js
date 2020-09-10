@@ -21,13 +21,13 @@ function Routes () {
     return(
         <Switch>
             <Route exact path={'/'}>
-                {signInCheck ? <Home/> : <Redirect to={'/signin'}/>}
+                {signInCheck ? <Home/> : <SignIn/>}
             </Route>
             <Route path={'/signup'}>
-                {!signInCheck ? <SignUp/> : <Redirect to={'/'}/>}
+                {!signInCheck ? <SignUp/> : <Home/>}
             </Route>
             <Route path={'/signin'}>
-                {!signInCheck ? <SignIn/> : <Redirect to={'/'}/>}
+                {!signInCheck ? <SignIn/> : <Home/>}
             </Route>
         </Switch>
     );

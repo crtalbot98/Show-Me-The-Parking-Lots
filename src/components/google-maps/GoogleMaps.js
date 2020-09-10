@@ -29,6 +29,7 @@ function GoogleMaps(){
 
         garageList.forEach((gEle) => {
             const miles = latToMiles(Number(userLoc.x), Number(gEle.location.lat), Number(userLoc.y), Number(gEle.location.lng));
+            console.log(miles);
             if(miles < currentMiles) {
                 closest.name = gEle.name;
                 closest.miles = miles;
@@ -39,6 +40,8 @@ function GoogleMaps(){
             current = gEle;
             currentMiles = miles;
         });
+
+        console.log('closests '+closest.miles);
 
         dispatch(closestGarage(closest));
     };

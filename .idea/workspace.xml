@@ -2,21 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="810fda78-8373-483d-b3a3-3e654bf4110d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/google-maps/nearITandET.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/google-maps/ClosestGarage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/google-maps/ClosestGarage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/google-maps/GoogleMaps.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/google-maps/GoogleMaps.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/google-maps/Location.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/google-maps/Location.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/google-maps/Pointer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/google-maps/Pointer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home/Nav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/Nav.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home/SideBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/SideBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/user/SignIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/user/SignIn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/user/SignUp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/user/SignUp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux-stores/actions/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux-stores/actions/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux-stores/reducers/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux-stores/reducers/reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/routes/Routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/routes/Routes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +49,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\School Projects\CIT-49900\final-project\public" />
       <recent name="C:\School Projects\CIT-49900\final-project\src\components" />
       <recent name="C:\School Projects\CIT-49900\final-project\src\home" />
       <recent name="C:\School Projects\CIT-49900\final-project\src\components\google-maps" />
@@ -100,22 +89,37 @@
       <workItem from="1588352339523" duration="9486000" />
       <workItem from="1588382290789" duration="4290000" />
       <workItem from="1588428872527" duration="10717000" />
-      <workItem from="1588453642669" duration="3042000" />
+      <workItem from="1588453642669" duration="4970000" />
+      <workItem from="1588806369429" duration="102000" />
+      <workItem from="1589204890512" duration="141000" />
+      <workItem from="1589304574541" duration="1314000" />
+      <workItem from="1589319974420" duration="1021000" />
+      <workItem from="1589330070839" duration="1949000" />
+      <workItem from="1589473057301" duration="17000" />
+      <workItem from="1597257955886" duration="1589000" />
+      <workItem from="1597426736460" duration="655000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.env" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="707" y="509" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588806403523">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="707" y="509" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1588806403523" />
     <state x="348" y="436" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1588002718288">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="348" y="436" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1588002718288" />
-    <state x="1060" y="455" key="FileChooserDialogImpl" timestamp="1588353581093">
+    <state x="1060" y="455" key="FileChooserDialogImpl" timestamp="1589473072004">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1060" y="455" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1588353581093" />
+    <state x="1060" y="455" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1589473072004" />
     <state x="264" y="325" width="672" height="678" key="search.everywhere.popup" timestamp="1588445799697">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
