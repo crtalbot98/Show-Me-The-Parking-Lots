@@ -9,7 +9,7 @@ import {latToMiles} from "../helpers/helper";
 
 function GoogleMaps(){
 
-    const mapsKey = 'AIzaSyB3CvKgpfY4aSTMvI5B7-EhxUqe7hF0uuk';
+    const mapsKey = 'AIzaSyCwSPApAUFdguQ8VWv0mfIlYe6d2guCSVA';
     const dispatch = useDispatch();
     const [garageList, SetGarageList] = React.useState(Garages);
     const [currentPos, setPos] = React.useState({});

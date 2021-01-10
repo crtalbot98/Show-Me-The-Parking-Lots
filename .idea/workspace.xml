@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="810fda78-8373-483d-b3a3-3e654bf4110d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/google-maps/GoogleMaps.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/google-maps/GoogleMaps.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/routes/Routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/routes/Routes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,6 +96,8 @@
       <workItem from="1589473057301" duration="17000" />
       <workItem from="1597257955886" duration="1589000" />
       <workItem from="1597426736460" duration="655000" />
+      <workItem from="1599777131792" duration="853000" />
+      <workItem from="1599850750401" duration="17000" />
     </task>
     <servers />
   </component>
@@ -108,22 +108,10 @@
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.env" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="707" y="509" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588806403523">
+    <state x="1060" y="455" key="FileChooserDialogImpl" timestamp="1599850764180">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="707" y="509" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1588806403523" />
-    <state x="348" y="436" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1588002718288">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="348" y="436" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1588002718288" />
-    <state x="1060" y="455" key="FileChooserDialogImpl" timestamp="1589473072004">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="1060" y="455" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1589473072004" />
-    <state x="264" y="325" width="672" height="678" key="search.everywhere.popup" timestamp="1588445799697">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="264" y="325" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1588445799697" />
+    <state x="1060" y="455" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1599850764180" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
