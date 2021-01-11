@@ -41,8 +41,6 @@ function GoogleMaps(){
             currentMiles = miles;
         });
 
-        console.log('closests '+closest.miles);
-
         dispatch(closestGarage(closest));
     };
 
