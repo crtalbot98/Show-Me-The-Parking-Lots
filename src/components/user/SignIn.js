@@ -16,6 +16,11 @@ function SignIn (){
         updateInput({ ...input, [prop]: event.target.value })
     };
 
+    const signInAsGuest = () => {
+        dispatch(setUserLogIn(true));
+        dispatch(setUserData(null, 'guest'));
+    };
+
     const submitUserData = () => {
         Fire.auth().signInWithEmailAndPassword(input.email, input.password).then(() => {
             let user = Fire.auth().currentUser;
@@ -46,6 +51,7 @@ function SignIn (){
                        value={input.password}/>
             </div>
             <button onClick={submitUserData}>Submit</button>
+            <button onClick={signInAsGuest}>Sign in as a guest</button>
             <Link to={'/signup'}>Not a user yet?</Link>
         </div>
     );

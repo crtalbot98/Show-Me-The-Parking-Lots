@@ -69,7 +69,7 @@ function SignUp (){
                        value={input.confirmPass}/>
             </div>
             <button onClick={submitUserData}>Submit</button>
-            <Link to={'/signin'}>Already a user?</Link>
+            <Link to={'/signin'}>Already a user or just a guest?</Link>
         </div>
     );
 }
