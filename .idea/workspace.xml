@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="810fda78-8373-483d-b3a3-3e654bf4110d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/netlify.toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -98,7 +99,7 @@
       <workItem from="1597426736460" duration="655000" />
       <workItem from="1599777131792" duration="853000" />
       <workItem from="1599850750401" duration="17000" />
-      <workItem from="1610321302487" duration="1221000" />
+      <workItem from="1610321302487" duration="1512000" />
     </task>
     <servers />
   </component>
@@ -109,10 +110,10 @@
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.env" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1060" y="455" key="FileChooserDialogImpl" timestamp="1599850764180">
+    <state x="221" y="505" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1610323320320">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1060" y="455" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1599850764180" />
+    <state x="221" y="505" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1610323320320" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
