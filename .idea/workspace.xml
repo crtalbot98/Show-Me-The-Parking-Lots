@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="810fda78-8373-483d-b3a3-3e654bf4110d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/netlify.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/google-maps/GoogleMaps.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/google-maps/GoogleMaps.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +98,7 @@
       <workItem from="1597426736460" duration="655000" />
       <workItem from="1599777131792" duration="853000" />
       <workItem from="1599850750401" duration="17000" />
-      <workItem from="1610321302487" duration="2266000" />
+      <workItem from="1610321302487" duration="3132000" />
     </task>
     <servers />
   </component>
