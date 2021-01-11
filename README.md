@@ -1,5 +1,7 @@
-# CIT 49900 Final Project
+# Show Me The Parking Lots
 ## Chandler Talbot
+
+An application to help you find the parking lots/garages around the IUPUI campus.
 
 Created using React, react-redux, react-router, and firebase.
 
